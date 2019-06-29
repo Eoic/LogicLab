@@ -1,7 +1,7 @@
 import { Application } from 'express';
-import index from './routes/index';
-import login from './routes/login';
-import dashboard from './routes/dashboard';
+import { index } from './routes/index';
+import { login } from './routes/login';
+import { dashboard } from './routes/dashboard';
 
 const LinkRoutes = (app: Application) => {
     app.use('/', index);
@@ -9,4 +9,4 @@ const LinkRoutes = (app: Application) => {
     app.use('/dashboard', dashboard);
 }
 
-export default LinkRoutes;
+export { LinkRoutes };

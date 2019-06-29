@@ -1,12 +1,12 @@
 import * as PIXI from 'pixi.js';
 
 const app = new PIXI.Application({
-    width: 256,
-    height: 256,
     antialias: true,
-    transparent: false,
+    backgroundColor: 0x2F2F2F,
+    height: 256,
     resolution: 1,
-    backgroundColor: 0x2F2F2F
+    transparent: false,
+    width: 256,
 });
 
 app.renderer.view.style.position = "absolute";

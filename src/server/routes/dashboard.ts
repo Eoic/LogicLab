@@ -5,4 +5,4 @@ router.get('/', (_req, res) => {
     res.render('dashboard', { title: "Dashboard" })
 });
 
-export default router;
+export { router as dashboard };

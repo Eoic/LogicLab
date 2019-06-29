@@ -5,4 +5,4 @@ router.get('/', (_req, res) => {
     res.render('login', { title: "Login page" });
 });
 
-export default router;
+export { router as login };

@@ -5,4 +5,4 @@ router.get('/', (_req, res) => {
     res.render('index', { title: "Main page" });
 });
 
-export default router;
+export { router as index };
