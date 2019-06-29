@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$primary-color: #b5c4df;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $primary-color;
+  font-family: 'Open Sans', sans-serif;
+}
