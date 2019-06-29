@@ -19,5 +19,14 @@ module.exports = {
                 loaders: ['awesome-typescript-loader']
             }
         ]
+    },
+    watch: true,
+    watchOptions: {
+        ignored: [
+            'node_modules'
+        ]
+    },
+    stats: {
+        warnings: false
     }
 };

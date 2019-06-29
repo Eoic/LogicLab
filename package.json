@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/app.js",
-    "dev": "nodemon src/server/app.ts",
+    "dev": "concurrently \"nodemon src/server/app.ts\" \"npm run sass-watch\" \"npm run webpack\"",
     "build": "tsc -p . && npm run sass-instant",
     "sass-watch": "node-sass -w styles/ -o public/css --recursive",
     "sass-instant": "node-sass styles/ -o public/css --recursive",
