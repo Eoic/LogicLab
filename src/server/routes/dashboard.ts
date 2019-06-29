@@ -2,7 +2,7 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/', (_req, res) => {
-    res.render('login', { title: "Login page" });
+    res.render('dashboard', { title: "Dashboard" })
 });
 
 export default router;
