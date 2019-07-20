@@ -1,5 +1,24 @@
 extends layout
 
 block content
-    a(href='/dashboard') Dashboard page
-    a(href='/login') Login page
+    nav(class='nav')
+        ul(class='nav-list')
+            li(class='nav-brand')
+                a(href='#')
+                i(class='fas fa-flask icon-narrow icon-center')
+                | LogicLab
+            li 
+                a(href='#') About
+            li 
+                a(href='#') Examples
+            li
+                a(href='#') Login
+            li 
+                a(href='#') Register
+    header(class='header')
+        div(class='text-box')
+            h1(class='primary-heading') Logic circuits simulation and design 
+            h4(class='secondary-heading') Learn how to create and simulate logic circuits in the browser
+            a(href='/login' class='btn btn-link btn-lg btn-green uppercase', role='button')
+                i(class='fas fa-microchip icon-narrow') 
+                | Create circuit

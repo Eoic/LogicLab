@@ -1,11 +1,144 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-$primary-color: #b5c4df;
+// Colors
+$dark: #202030;
+$light-gray: #A2AEBB;
+$white: #F1EDEE;
+$green: #0F7173;
 
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-  background-color: $primary-color;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $white;
+  background-color: $light-gray;
+}
+
+.header {
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(28, 49, 68, 0.85),
+    rgba(10, 31, 49, 0.85),
+  ),
+  url('/images/background.jpg');;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 95vh);
+}
+
+.text-box {
+  transform: translate(-25%, -35%);
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+
+.primary-heading {
+  text-transform: uppercase;
+  font-size: 60px;
+  max-width: 70%;
+}
+
+.secondary-heading {
+  font-size: 22px;
+}
+
+// Button
+.btn {
+  border-style: none;
+  border-radius: 3px;
+  background-color: $white;
+  padding: 10px;
+  margin-top: 23px;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.btn-small {
+
+}
+
+.btn-medium {
+
+}
+
+.btn-lg {
+  font-size: 28px;
+}
+
+.btn-green {
+  background-color: $green;
+  color: $white;
+}
+
+.btn-green:hover {
+  background-color: rgb(17, 152, 155);
+}
+
+a {
+  text-decoration: none;
+}
+
+// Other
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.icon-narrow {
+  min-width: 35px;
+}
+
+.card {
+
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.nav-list {
+  list-style-type: none;
+  height: 100%;
+  position: absolute;
+  left: 8%;
+}
+
+.nav-list > li {
+  display: inline;
+  line-height: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-list > li a {
+  color: $white;
+  font-size: 18px;
+  transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.nav-list > li a:hover {
+  color: rgb(17, 152, 155);
+  border-bottom: 3px solid rgb(17, 152, 155);
+}
+
+.icon-center {
+  text-align: center;
 }
